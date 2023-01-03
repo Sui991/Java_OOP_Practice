@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="527.0" prefWidth="320" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketordermain.FXMLDocumentController">
+   <children>
+      <VBox prefHeight="527.0" prefWidth="320.0">
+         <children>
+            <AnchorPane prefHeight="132.0" prefWidth="320.0">
+               <children>
+                  <Label layoutX="36.0" layoutY="39.0" text="起站" />
+                  <Label layoutX="36.0" layoutY="81.0" text="訖站" />
+                  <Button layoutX="261.0" layoutY="35.0" mnemonicParsing="false" onAction="#exchange" text="對調" />
+                  <Button layoutX="261.0" layoutY="77.0" mnemonicParsing="false" onAction="#purchase" text="購買" />
+                  <ComboBox fx:id="fromstation" layoutX="85.0" layoutY="35.0" prefWidth="150.0" />
+                  <ComboBox fx:id="tostation" layoutX="85.0" layoutY="77.0" prefWidth="150.0" />
+                  <Label layoutX="21.0" layoutY="124.0" text="座位偏好" />
+                  <ComboBox fx:id="seat" layoutX="85.0" layoutY="119.0" prefWidth="150.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="90.0" prefWidth="320.0">
+               <children>
+                  <RadioButton fx:id="adult" layoutX="14.0" layoutY="60.0" mnemonicParsing="false" selected="true" text="全票">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="ticketType" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="child" layoutX="76.0" layoutY="60.0" mnemonicParsing="false" text="半票" toggleGroup="$ticketType" />
+                  <Label layoutX="170.0" layoutY="70.0" text="張數" />
+                  <TextField fx:id="count" layoutX="208.0" layoutY="65.0" prefHeight="30.0" prefWidth="67.0" />
+                  <RadioButton fx:id="one" layoutX="6.0" layoutY="28.0" mnemonicParsing="false" selected="true" text="單程票">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="ticketType2" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="one1" layoutX="97.0" layoutY="28.0" mnemonicParsing="false" text="來回票" toggleGroup="$ticketType2" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="288.0" prefWidth="320.0">
+               <children>
+                  <TextArea fx:id="display" layoutX="16.0" layoutY="19.0" prefHeight="253.0" prefWidth="289.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
