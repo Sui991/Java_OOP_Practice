@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="641.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c109118115_w2.FXMLDocumentController">
+   <children>
+      <TextArea fx:id="display" layoutX="59.0" layoutY="44.0" prefHeight="558.0" prefWidth="334.0" />
+      <Button layoutX="535.0" layoutY="29.0" mnemonicParsing="false" onAction="#read_default_file" text="讀取成績" />
+      <Button layoutX="514.0" layoutY="462.0" mnemonicParsing="false" onAction="#TTTT" text="平均成績分布表" />
+      <Button layoutX="536.0" layoutY="416.0" mnemonicParsing="false" onAction="#classAvg" text="班級平均" />
+      <Button layoutX="520.0" layoutY="332.0" mnemonicParsing="false" onAction="#min" text="班上最低分數" />
+      <Button layoutX="520.0" layoutY="74.0" mnemonicParsing="false" onAction="#HMStudent" text="有多少個學生" />
+      <Button layoutX="490.0" layoutY="123.0" mnemonicParsing="false" onAction="#HMS" text="每個學生有多少次成績" />
+      <Button layoutX="498.0" layoutY="169.0" mnemonicParsing="false" onAction="#ESAvg" text="每個學生的平均分數" />
+      <Button layoutX="498.0" layoutY="210.0" mnemonicParsing="false" onAction="#ESMax" text="每個學生的最高分數" />
+      <Button layoutX="498.0" layoutY="250.0" mnemonicParsing="false" onAction="#ESMin" text="每個學生的最低分數" />
+      <Button layoutX="521.0" layoutY="293.0" mnemonicParsing="false" onAction="#Max" text="班上最高分數" />
+      <Button layoutX="498.0" layoutY="373.0" mnemonicParsing="false" onAction="#TCavg" text="第1、2次考試全班平均成績" />
+   </children>
+</AnchorPane>
